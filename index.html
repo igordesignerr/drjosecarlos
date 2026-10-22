@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Dr. José Carlos, fisioterapeuta. Atendimento domiciliar em Cotia, Vargem Grande Paulista e Embu das Artes. Agende sua avaliação pelo WhatsApp.">
+<meta name="theme-color" content="#A1D5C8">
+<meta property="og:title" content="Dr. José Carlos · Fisioterapeuta">
+<meta property="og:description" content="Atendimento domiciliar em Cotia e região. Agende sua avaliação.">
+<meta property="og:image" content="img/jose-carlos.webp">
+<title>Dr. José Carlos · Links</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800;900&family=Ubuntu:wght@400;500;700&display=swap">
+<style>
+:root{padding-top:env(safe-area-inset-top,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}
+/* Bio link mobile: foto no topo sobre o verde-menta da marca, nome, faixa de especialidades,
+   abas Agendar / Guia grátis, botão de ação fixo no rodapé. */
+:root {
+  --mint: #A1D5C8;
+  --mint-deep: #7FB8AA;
+  --navy: #0F1F33;
+  --slate: #5A7098;
+  --bg: #F4F1EA;
+  --surface: #FFFFFF;
+  --fg: #0F1F33;
+  --muted: #3D5068;
+  --line: #DDD7CB;
+  --accent: #0F1F33;
+  --accent-fg: #FFFFFF;
+  --chip: #E6EFEC;
+  --font-display: "Archivo", "Arial Black", system-ui, sans-serif;
+  --font-body: "Ubuntu", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0B1626; --surface: #13233A; --fg: #EEF3F6; --muted: #A9BBCF;
+    --line: #22364F; --accent: #A1D5C8; --accent-fg: #0F1F33; --chip: #16304D;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0B1626; --surface: #13233A; --fg: #EEF3F6; --muted: #A9BBCF;
+  --line: #22364F; --accent: #A1D5C8; --accent-fg: #0F1F33; --chip: #16304D;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font-family: var(--font-body); }
+.page {
+  max-width: 440px; margin: 0 auto;
+  padding-block: 0 132px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.media {
+  position: relative; width: 100%; max-width: 100%; aspect-ratio: 4 / 4.4;
+  background: var(--mint); border-radius: 0 0 28px 28px; overflow: hidden;
+}
+.media img {
+  position: absolute; right: 4%; bottom: 0; height: 94%; width: auto; max-width: none;
+}
+.media .tag {
+  position: absolute; left: 16px; bottom: 16px;
+  font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase;
+  color: #0F1F33; background: rgba(255,255,255,0.55); border-radius: 999px; padding: 7px 12px;
+}
+.id { padding-top: 22px; display: flex; flex-direction: column; gap: 6px; }
+.name {
+  font-family: var(--font-display); font-weight: 900; font-size: 40px; line-height: 1;
+  letter-spacing: -0.03em; margin: 0; text-wrap: balance;
+}
+.role { margin: 0; font-size: 14px; color: var(--muted); }
+.spec {
+  display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0;
+  margin: 18px 0 22px;
+}
+.spec li {
+  background: var(--chip); color: var(--fg); border-radius: 999px;
+  padding: 8px 13px; font-size: 13px; font-weight: 500;
+}
+.tabs {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 4px;
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: 999px; padding: 4px; margin-bottom: 22px;
+}
+.tabs button {
+  font: inherit; font-size: 15px; font-weight: 500; color: var(--muted);
+  background: transparent; border: 0; border-radius: 999px; padding: 12px 8px; cursor: pointer;
+}
+.tabs button[aria-selected="true"] { background: var(--accent); color: var(--accent-fg); font-weight: 700; }
+.tabs button:focus-visible, .btn:focus-visible, .row:focus-visible { outline: 2px solid var(--fg); outline-offset: 3px; }
+.panel h1, .panel h2 {
+  font-family: var(--font-display); font-weight: 800; font-size: 30px; line-height: 1.08;
+  letter-spacing: -0.02em; margin: 0 0 12px; text-wrap: balance;
+}
+.panel p { margin: 0 0 14px; font-size: 16px; line-height: 1.55; color: var(--muted); }
+.steps { list-style: none; padding: 0; margin: 4px 0 18px; display: flex; flex-direction: column; gap: 10px; }
+.steps li { display: flex; gap: 12px; align-items: flex-start; font-size: 15px; line-height: 1.45; }
+.steps b {
+  flex: none; width: 26px; height: 26px; border-radius: 50%;
+  background: var(--mint); color: #0F1F33; display: grid; place-items: center;
+  font-family: var(--font-display); font-size: 13px;
+}
+.area {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 18px;
+  padding: 14px 16px; font-size: 14px; line-height: 1.5; color: var(--fg); margin-bottom: 18px;
+}
+.area strong { display: block; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 2px; font-weight: 500; }
+.guide {
+  display: grid; grid-template-columns: 96px 1fr; gap: 16px; align-items: center;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 14px; margin-bottom: 16px;
+}
+.cover {
+  aspect-ratio: 4 / 5; border-radius: 10px; background: var(--mint); color: #0F1F33;
+  padding: 10px; display: flex; flex-direction: column; justify-content: space-between;
+}
+.cover .n { font-family: var(--font-display); font-weight: 900; font-size: 40px; line-height: 0.8; }
+.cover .t { font-family: var(--font-display); font-weight: 800; font-size: 9.5px; line-height: 1.05; }
+.guide p { margin: 0; font-size: 14px; color: var(--muted); }
+.guide h3 { margin: 0 0 4px; font-size: 16px; line-height: 1.3; }
+.checks { list-style: none; padding: 0; margin: 0 0 16px; display: flex; flex-direction: column; gap: 8px; font-size: 15px; line-height: 1.4; }
+.checks li { display: flex; gap: 10px; }
+.checks li::before { content: ""; flex: none; width: 16px; height: 16px; margin-top: 2px; border: 2px solid var(--mint-deep); border-radius: 5px; }
+.links { display: flex; flex-direction: column; gap: 8px; margin-top: 26px; }
+.row {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
+  padding: 14px 16px; color: var(--fg); text-decoration: none; font-size: 15px; font-weight: 500;
+}
+.row span { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.row svg { width: 20px; height: 20px; flex: none; }
+.row small { color: var(--muted); font-size: 13px; font-weight: 400; }
+.foot { margin-top: 22px; font-size: 12px; line-height: 1.5; color: var(--muted); text-align: center; }
+.btn {
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  width: 100%; min-height: 54px; border-radius: 999px; border: 0;
+  background: var(--accent); color: var(--accent-fg); font: inherit; font-size: 16px; font-weight: 700;
+  text-decoration: none; padding: 14px 20px;
+}
+.btn svg { width: 20px; height: 20px; flex: none; }
+.cta-bar {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 5;
+  padding-top: 12px;
+  padding-bottom: calc(14px + env(safe-area-inset-bottom, 0px));
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  background: color-mix(in srgb, var(--bg) 90%, transparent);
+  backdrop-filter: blur(10px); border-top: 1px solid var(--line);
+}
+.cta-bar .btn { max-width: 440px; margin: 0 auto; }
+@media (prefers-reduced-motion: no-preference) {
+  .tabs button { transition: background 0.2s ease, color 0.2s ease; }
+}
+</style>
+</head>
+<body>
+<main class="page">
+  <section aria-label="Apresentação">
+    <div class="media">
+      <span class="tag">Atendimento domiciliar</span>
+      <img src="img/jose-carlos.webp" alt="Dr. José Carlos, fisioterapeuta, com uma bola de exercício">
+    </div>
+    <div class="id">
+      <p class="name">Dr. José Carlos</p>
+      <p class="role">Fisioterapeuta · CREFITO 385069-F</p>
+    </div>
+    <ul class="spec" aria-label="Especialidades">
+      <li>Reabilitação funcional</li>
+      <li>Ortopedia e neurologia</li>
+      <li>Pós-AVC</li>
+      <li>Quiropraxia clínica</li>
+    </ul>
+  </section>
+
+  <div class="tabs" role="tablist" aria-label="O que você procura">
+    <button role="tab" id="tab-agendar" aria-selected="true" aria-controls="view-agendar">Quero agendar</button>
+    <button role="tab" id="tab-guia" aria-selected="false" aria-controls="view-guia">Guia grátis</button>
+  </div>
+
+  <section id="view-agendar" role="tabpanel" aria-labelledby="tab-agendar" class="panel">
+    <h1>O cuidado vai até você.</h1>
+    <p>Fisioterapia na sua casa, para quem sente dor ao se locomover, está se recuperando de cirurgia ou em reabilitação pós-AVC.</p>
+    <ol class="steps">
+      <li><b>1</b><span>Chame no WhatsApp e conte o que está sentindo.</span></li>
+      <li><b>2</b><span>Escolha o dia e o horário da avaliação.</span></li>
+      <li><b>3</b><span>Avaliação completa em casa e plano de tratamento.</span></li>
+    </ol>
+    <div class="area"><strong>Onde atende</strong>Cotia, Vargem Grande Paulista e Embu das Artes</div>
+  </section>
+
+  <section id="view-guia" role="tabpanel" aria-labelledby="tab-guia" class="panel" hidden>
+    <h2>Sua dor já virou rotina?</h2>
+    <div class="guide">
+      <div class="cover" aria-hidden="true"><span class="n">5</span><span class="t">sinais de que sua dor precisa de avaliação.</span></div>
+      <div><h3>5 sinais de que sua dor precisa de avaliação</h3><p>Guia gratuito em PDF · 3 min de leitura</p></div>
+    </div>
+    <p>Descubra quando a dor deixou de ser “normal”. Você vai se reconhecer em algum destes?</p>
+    <ul class="checks">
+      <li>A dor dura semanas ou sempre volta</li>
+      <li>Atrapalha tarefas simples ou o sono</li>
+      <li>Espalha, formiga ou adormece</li>
+    </ul>
+  </section>
+
+  <nav class="links" aria-label="Outros contatos">
+    <a class="row" href="https://www.instagram.com/drjosecarlosn/" target="_blank" rel="noopener">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="12" cy="12" r="3.2"/><path d="M16.5 7.5v.01"/></svg>Instagram</span>
+      <small>@drjosecarlosn</small>
+    </a>
+    <a class="row" href="https://wa.me/5511992049406" target="_blank" rel="noopener">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.6-4.6A9 9 0 1 1 8 19.6L3 21z"/></svg>WhatsApp</span>
+      <small>(11) 99204-9406</small>
+    </a>
+  </nav>
+
+  <p class="foot">Dr. José Carlos · Fisioterapeuta · CREFITO 385069-F</p>
+</main>
+
+<div class="cta-bar">
+  <a class="btn" id="cta" target="_blank" rel="noopener" href="https://wa.me/5511992049406?text=Ol%C3%A1%2C%20Dr.%20Jos%C3%A9%20Carlos!%20Vi%20seu%20perfil%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.%20Quais%20hor%C3%A1rios%20est%C3%A3o%20dispon%C3%ADveis%3F">
+    <svg id="cta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.6-4.6A9 9 0 1 1 8 19.6L3 21z"/></svg>
+    <span id="cta-label">Agendar avaliação</span>
+  </a>
+</div>
+
+<script>
+const CTA = {
+  agendar: { label: "Agendar avaliação", href: "https://wa.me/5511992049406?text=Ol%C3%A1%2C%20Dr.%20Jos%C3%A9%20Carlos!%20Vi%20seu%20perfil%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.%20Quais%20hor%C3%A1rios%20est%C3%A3o%20dispon%C3%ADveis%3F" },
+  guia: { label: "Baixar o guia grátis", href: "https://drive.google.com/file/d/1iSu3yP378vf0r0ug2G0_Yw__UK4RJF8z/view?usp=sharing" }
+};
+const $ = (id) => document.getElementById(id);
+function show(name) {
+  const ag = name === "agendar";
+  $("view-agendar").hidden = !ag;
+  $("view-guia").hidden = ag;
+  $("tab-agendar").setAttribute("aria-selected", String(ag));
+  $("tab-guia").setAttribute("aria-selected", String(!ag));
+  $("cta-label").textContent = CTA[name].label;
+  $("cta").href = CTA[name].href;
+  $("cta-icon").innerHTML = ag
+    ? '<path d="M3 21l1.6-4.6A9 9 0 1 1 8 19.6L3 21z"/>'
+    : '<path d="M12 4v11"/><path d="M7 10l5 5 5-5"/><path d="M5 20h14"/>';
+}
+$("tab-agendar").addEventListener("click", () => show("agendar"));
+$("tab-guia").addEventListener("click", () => show("guia"));
+if (location.hash === "#guia") show("guia");
+</script>
+
+</body>
+</html>
