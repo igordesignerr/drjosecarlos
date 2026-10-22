@@ -7,7 +7,7 @@
 <meta name="theme-color" content="#A1D5C8">
 <meta property="og:title" content="Dr. José Carlos · Fisioterapeuta">
 <meta property="og:description" content="Atendimento domiciliar em Cotia e região. Agende sua avaliação.">
-<meta property="og:image" content="img/jose-carlos.webp">
+<meta property="og:image" content="https://igordesignerr.github.io/drjosecarlos/img/jose-carlos-capa.webp">
 <title>Dr. José Carlos · Links</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800;900&family=Ubuntu:wght@400;500;700&display=swap">
@@ -52,25 +52,25 @@ body { background: var(--bg); color: var(--fg); font-family: var(--font-body); }
   padding-right: max(16px, env(safe-area-inset-right, 0px));
 }
 .media {
-  position: relative; width: 100%; max-width: 100%; aspect-ratio: 4 / 4.4;
-  background: var(--mint); border-radius: 0 0 28px 28px; overflow: hidden;
+  position: relative; width: 100%; max-width: 100%; aspect-ratio: 4 / 5;
+  background: #CDB89A; border-radius: 0 0 28px 28px; overflow: hidden;
 }
 .media img {
-  position: absolute; right: 4%; bottom: 0; height: 94%; width: auto; max-width: none;
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%;
 }
 .media .tag {
-  position: absolute; left: 16px; bottom: 16px;
+  position: absolute; z-index: 1; left: 50%; bottom: 16px; transform: translateX(-50%); white-space: nowrap;
   font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase;
-  color: #0F1F33; background: rgba(255,255,255,0.55); border-radius: 999px; padding: 7px 12px;
+  color: #0F1F33; background: rgba(255,255,255,0.75); border-radius: 999px; padding: 7px 12px;
 }
-.id { padding-top: 22px; display: flex; flex-direction: column; gap: 6px; }
+.id { padding-top: 22px; display: flex; flex-direction: column; align-items: center; gap: 6px; text-align: center; }
 .name {
   font-family: var(--font-display); font-weight: 900; font-size: 40px; line-height: 1;
   letter-spacing: -0.03em; margin: 0; text-wrap: balance;
 }
 .role { margin: 0; font-size: 14px; color: var(--muted); }
 .spec {
-  display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0;
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; list-style: none; padding: 0;
   margin: 18px 0 22px;
 }
 .spec li {
@@ -137,6 +137,7 @@ body { background: var(--bg); color: var(--fg); font-family: var(--font-body); }
   text-decoration: none; padding: 14px 20px;
 }
 .btn svg { width: 20px; height: 20px; flex: none; }
+.btn-ghost { background: var(--mint); color: #0F1F33; }
 .cta-bar {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 5;
   padding-top: 12px;
@@ -157,7 +158,7 @@ body { background: var(--bg); color: var(--fg); font-family: var(--font-body); }
   <section aria-label="Apresentação">
     <div class="media">
       <span class="tag">Atendimento domiciliar</span>
-      <img src="img/jose-carlos.webp" alt="Dr. José Carlos, fisioterapeuta, com uma bola de exercício">
+      <img src="img/jose-carlos-capa.webp" alt="Dr. José Carlos, fisioterapeuta, com uma bola de exercício">
     </div>
     <div class="id">
       <p class="name">Dr. José Carlos</p>
@@ -199,6 +200,10 @@ body { background: var(--bg); color: var(--fg); font-family: var(--font-body); }
       <li>Atrapalha tarefas simples ou o sono</li>
       <li>Espalha, formiga ou adormece</li>
     </ul>
+    <a class="btn btn-ghost" href="https://drive.google.com/file/d/1iSu3yP378vf0r0ug2G0_Yw__UK4RJF8z/view?usp=sharing" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10l5 5 5-5"/><path d="M5 20h14"/></svg>
+      Baixar o guia em PDF
+    </a>
   </section>
 
   <nav class="links" aria-label="Outros contatos">
